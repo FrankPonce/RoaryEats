@@ -53,14 +53,14 @@ export const featured = {
                 "name": "pizza",
                 "description": "cheezy garlic pizza",
                 "price": 10,
-                "image": "require('../assets/images/pizzaDish.png')"
+                "image": require('../assets/images/pizzaDish.png')
               },
               {
                 "id": 2,
                 "name": "pizza",
                 "description": "cheezy garlic pizza",
                 "price": 10,
-                "image": "require('../assets/images/pizzaDish.png')"
+                "image": require('../assets/images/pizzaDish.png')
               }
             ]
         },
@@ -81,14 +81,14 @@ export const featured = {
                 "name": "chorizo",
                 "description": "cheezy garlic pizza",
                 "price": 10,
-                "image": "require('../assets/images/pizzaDish.png')"
+                "image": require('../assets/images/pizzaDish.png')
               },
               {
                 "id": 2,
                 "name": "croqueta",
                 "description": "cheezy garlic pizza",
                 "price": 10,
-                "image": "require('../assets/images/pizzaDish.png')"
+                "image": require('../assets/images/pizzaDish.png')
               }
             ]
         }

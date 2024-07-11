@@ -10,19 +10,21 @@ import { featured } from '../constants';
 import FeaturedRow from '../components/featuredRow';
 
 
+
 export default function HomeScreen() {
   return (
     
     <SafeAreaView className="bg-stone-50">
       
-        <StatusBar barStyle = "light-content" />
+        <StatusBar barStyle = "dark-content " backgroundColor={'#fafaf9'}/>
+        
         {/* search bar */}
-        <View className = "flex-row items-center space-x-2 px-4 pb-2">
-            <View className = "flex-row flex-1 items-center p-3 rounded-full border border-gray-300">
-                <Icon.Search height="25" width="25" stroke="gray" />
-                <TextInput placeholder='Restaurants' className="ml-2 flex-1 text-gray-500" />
-                <View className = "flex-row items-center space-x-1 border-0 border-l-2 pl-2 border-l-gray-300">
-                    <Icon.MapPin height="20" width="20" stroke="gray" />
+        <View className = "flex-row items-center space-x-1.5 px-4 pb-1 pt-5" >
+            <View className = "flex-row flex-1 items-center p-3  rounded-full border border-gray-300" style={{flex: 1}}>
+                <Icon.Search height="20" width="20" stroke="gray" />
+                <TextInput placeholder='Restaurants ' className="ml-0.5 flex-2 text-gray-500" />
+                <View className = "flex-row items-center space-x-0.5 border-0 border-l-2 pl-1 border-l-gray-300">
+                    <Icon.MapPin height="18" width="18" stroke="gray" />
                     <Text className="text-gray-500">New York, NY</Text>
                 </View>           
             </View>
@@ -33,7 +35,7 @@ export default function HomeScreen() {
 
         {/* main */}
         <ScrollView showsVerticalScrollIndicator={false} 
-          contentContainerStyle={{paddingBottom: 20}}
+          contentContainerStyle={{paddingBottom: 70}}
         >
 
           {/* categories */}
