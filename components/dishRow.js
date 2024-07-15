@@ -18,13 +18,12 @@ export default function DishRow({item}) {
                 </Text>
                 <View className="flex-row items-center">
                     <TouchableOpacity className="p-1 rounded-full" style={{backgroundColor: themeColors.bgColor(1)}}>
-                        <Icon.Minus strokeWidth={2} height={20} width={20} stroke={'white'}/>
+                        <Icon.Minus strokeWidth={3} height={20} width={20} stroke={'white'}/>
                     </TouchableOpacity>
-                </View>
-                <Text className="px-3">{2}</Text>
-                <View className="flex-row items-center">
+                
+                    <Text className="px-3 font-bold">{2}</Text>
                     <TouchableOpacity className="p-1 rounded-full" style={{backgroundColor: themeColors.bgColor(1)}}>
-                        <Icon.Plus strokeWidth={2} height={20} width={20} stroke={'white'}/>
+                        <Icon.Plus strokeWidth={3} height={20} width={20} stroke={'white'}/>
                     </TouchableOpacity>
                 </View>
             </View>

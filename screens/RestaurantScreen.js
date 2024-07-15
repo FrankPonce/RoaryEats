@@ -4,7 +4,7 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 import * as Icon from "react-native-feather";
 import { themeColors } from '../theme';
 import DishRow from '../components/dishRow';
-
+import CartIcon from '../components/cartIcon';
 
 export default function RestaurantScreen() {
   const {params} = useRoute();
@@ -14,7 +14,8 @@ export default function RestaurantScreen() {
   return (
     
     <View>
-      <StatusBar barStyle = "dark-content " backgroundColor={'#1c1917'}/>
+      <StatusBar barStyle = "dark-content " translucent backgroundColor={'rgba(0,0,0,0.5)'}/>
+      <CartIcon/>
       <ScrollView>
         <View className="relative">
             <Image style={{ width: '100%', height: 270 }} source={item.image}/>
